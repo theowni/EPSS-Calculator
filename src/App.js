@@ -170,7 +170,7 @@ class App extends Component {
                       <HStack>
                         <InfoIcon color="purple" mr="5px" /> 
                         <Text>
-                          Percentile means that ~{Math.round((1 - percentile) * 10000)/100 }% of all CVE have a higher likelihood of being exploited in the wild.
+                          Percentile means that ~{Math.round((1 - percentile) * 10000)/100 }% of all CVEs have a higher likelihood of being exploited in the wild.
                         </Text>
                       </HStack>
                     </Text>
