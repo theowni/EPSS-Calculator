@@ -30,6 +30,7 @@ class App extends Component {
       cveIdentifier: '',
       epssScore: null,
       percentile: null,
+      formError: null,
     };
   }
 
@@ -39,6 +40,7 @@ class App extends Component {
 
   handleInputChange = (event) => {
     this.setState({ cveIdentifier: event.target.value });
+
   };
 
   readCsvFile = () => {
@@ -61,14 +63,20 @@ class App extends Component {
   };
 
   calculateEPSS = () => {
+    this.setState({ epssScore: null, percentile: null });
     const { cveIdentifier, cveData } = this.state;
 
-    console.log(cveData[0].keys)
-    const cveEntry = cveData.find((item) => item.cve === cveIdentifier);
-    console.log(cveEntry)
+    const cvePattern = /^CVE-\d{4}-\d{4,}$/;
+    if(cveIdentifier == null || cvePattern.test(cveIdentifier) === false) {
+      this.setState({ formError: 'Provide a valid CVE identifier!' });
+      return;
+    }
+    this.setState({ formError: null });
+
+    const cveEntry = cveData.find((item) => item.cve === cveIdentifier.trim());
 
     if (!cveEntry)
-      console.log("Error!")
+      this.setState({ formError: 'There is no matching CVE!' });
     else
       this.setState({epssScore: cveEntry.epss, percentile: cveEntry.percentile});
   }
@@ -137,6 +145,14 @@ class App extends Component {
                     value={this.state.cveIdentifier} // Bind the input value to the state
                     onChange={this.handleInputChange} // Update state when input changes
                   />
+                  {this.state.formError && (
+                    <Text
+                      color={"#9B2C2C"}
+                      size="sm"
+                    >
+                      {this.state.formError}
+                    </Text>
+                  )}
                 </FormControl>
 
                 <Button
