@@ -18,7 +18,7 @@
     "react-dom": "^18.3.1",
     "react-github-fork-ribbon": "^0.7.1",
     "react-papaparse": "^4.4.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
