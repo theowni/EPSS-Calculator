@@ -1,8 +1,32 @@
-# Getting Started with Create React App
+# 🔢 EPSS Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **EPSS Calculator is a user-friendly web application that calculates the EPSS** (Exploit Prediction Scoring System) **score based on a provided CVE** (Common Vulnerabilities and Exposures) identifier.
 
-## Available Scripts
+The calculator is available to use at https://theowni.github.io/EPSS-Calculator/, it doesn't send any user provided data to third party services.
+
+**It can also be deployed locally** by [downloading](https://github.com/theowni/EPSS-Calculator/archive/refs/heads/gh-pages.zip) the `.zip` with built package and opening `index.html` using your favourite browser.
+
+## 👾 What is EPSS?
+
+The Exploit Prediction Scoring System (EPSS) is a data-driven effort for estimating the likelihood (probability) that a software vulnerability will be exploited in the wild.
+
+More details about EPSS can be found on FIRST [dedicated website](https://www.first.org/epss/model).
+
+If you're looking for a practical usage of EPSS, you might be interested in [Prioritising Vulnerabilities Remedial Actions at Scale with EPSS](https://devsec-blog.com/2024/04/prioritising-vulnerabilities-remedial-actions-at-scale-with-epss/) article.
+
+
+
+## 🛠️ Development Stack
+
+The project was developed with React JS. It is consisted only of client-side components and can be easily deployed locally or on the chosen server. The EPSS data are meant to be updated on a daily basis as they may change over the time.
+
+## 🗺️ Roadmap
+
+- [x] deploy app with basic capabilities
+- [ ] add workflow for updating EPSS on a daily basis
+- [ ] add more advanced calculations
+
+## 👨‍💻 Development
 
 In the project directory, you can run:
 
@@ -14,11 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,42 +48,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧾 License
+EPSS Calculator is proudly developed under the terms of the GNU General Public License version 3.0 (GNU GPL v3.0). This license empowers the open-source community by promoting the principles of software freedom, collaboration, and transparency. Please review the LICENSE file for a detailed overview of the rights and responsibilities associated with using and contributing to this project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

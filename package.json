@@ -1,7 +1,7 @@
 {
   "name": "epss-calculator",
   "version": "0.1.0",
-  "homepage": "https://theowni.github.io/EPSS-Calculator",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
