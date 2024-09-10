@@ -164,7 +164,7 @@ class App extends Component {
                       <b>EPSS Score:</b> {epssScore}
                     </Text>
                     <Text fontSize="md">
-                      <b>Percentile:</b> {percentile}%
+                      <b>Percentile:</b> {percentile}
                     </Text>
                     <Text color={"gray"} mt="10px">
                       <HStack>
