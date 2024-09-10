@@ -1,6 +1,6 @@
 # 🔢 EPSS Calculator
 
-![aaa](./calc-screenshot.png)
+[![Calculator Screenshot](./calc-screenshot.png)](https://theowni.github.io/EPSS-Calculator/)
 
 The **EPSS Calculator is a user-friendly web application that calculates the EPSS** (Exploit Prediction Scoring System) **score based on a provided CVE** (Common Vulnerabilities and Exposures) identifier.
 
