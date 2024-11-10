@@ -4,9 +4,9 @@
 
 The **EPSS Calculator is a user-friendly web application that calculates the EPSS** (Exploit Prediction Scoring System) **score based on a provided CVE** (Common Vulnerabilities and Exposures) identifier.
 
-The calculator is available to use at https://theowni.github.io/EPSS-Calculator/, it doesn't send any user provided data to third party services.
+The calculator is available to use at https://theowni.github.io/EPSS-Calculator/, it doesn't send any user provided data to third party services. Hosted calculator uses latest EPSS scoring and is updated on a daily basis automatically.
 
-**It can also be deployed locally** by [downloading](https://github.com/theowni/EPSS-Calculator/archive/refs/heads/gh-pages.zip) the `.zip` with built package and opening `index.html` using your favourite browser.
+**It can also be deployed locally** by [downloading](https://github.com/theowni/EPSS-Calculator/archive/refs/heads/gh-pages.zip) the `.zip` with built package and opening `index.html` using your favourite browser. However, for the local deployment you may need to update the EPSS scoring using the latest data from https://www.first.org/epss/data_stats. 
 
 ## 👾 What is EPSS?
 
