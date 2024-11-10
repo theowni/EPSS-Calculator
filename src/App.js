@@ -142,7 +142,7 @@ class App extends Component {
                   <Input
                     type="text"
                     placeholder="e.g. CVE-2021-44228"
-                    value={this.state.cveIdentifier} // Bind the input value to the state
+                    value={cveIdentifier} // Bind the input value to the state
                     onChange={this.handleInputChange} // Update state when input changes
                   />
                   {this.state.formError && (
