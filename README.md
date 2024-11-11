@@ -25,7 +25,7 @@ The project was developed with React JS. It is consisted only of client-side com
 ## 🗺️ Roadmap
 
 - [x] deploy app with basic capabilities
-- [ ] add workflow for updating EPSS on a daily basis
+- [x] add workflow for updating EPSS on a daily basis
 - [ ] add more advanced calculations
 
 ## 👨‍💻 Development
